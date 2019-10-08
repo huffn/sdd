@@ -7,6 +7,8 @@ export default {
   component: TopicChoice
 };
 const basicTitle = "Between every two pines is a doorway to a new world.";
+const longTitle =
+  "Even if I knew that tomorrow the world would go to pieces, I would still plant my apple tree.";
 
 const actions = {
   updateSelected: action("Clicked")
@@ -22,4 +24,8 @@ export const PositiveTopicChoice = () => (
 
 export const NegativeTopicChoice = () => (
   <TopicChoice title={basicTitle} state="DEAD" {...actions}></TopicChoice>
+);
+
+export const OverflowingTitle = () => (
+  <TopicChoice title={longTitle} {...actions}></TopicChoice>
 );
