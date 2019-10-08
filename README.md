@@ -6,7 +6,7 @@ cd my-app
 npx -p @storybook/cli sb init
 ```
 
-You can use the command `git checkout step-0` to view the app in its initial state. There are 6 other steps that you can checkout if you fall behind.
+You can use the command `git checkout step-0` to view the app in its initial state. There are 7 other steps that you can checkout if you fall behind.
 
 The app is broken up into the following steps:
 
@@ -19,5 +19,6 @@ The app is broken up into the following steps:
 | step-4 | Topic List component created     |
 | step-5 | Profile component created        |
 | step-6 | Swipeable Card component created |
+| step-7 | Adding Docs to Storybook         |
 
 To start Storybook, run the command `npm run storybook`
