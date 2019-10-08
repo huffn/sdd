@@ -29,3 +29,22 @@ export const NegativeTopicChoice = () => (
 export const OverflowingTitle = () => (
   <TopicChoice title={longTitle} {...actions}></TopicChoice>
 );
+
+export const TopicChoiceWithState = () => {
+  const [state, updateState] = React.useState("");
+  const updateSelectedWithState = evt => {
+    const isAlive = evt.currentTarget.classList.contains("alive");
+    if ((state === "ALIVE" && isAlive) || (state === "DEAD" && !isAlive)) {
+      updateState("");
+    } else {
+      updateState(isAlive ? "ALIVE" : "DEAD");
+    }
+  };
+  return (
+    <TopicChoice
+      title={basicTitle}
+      state={state}
+      updateSelected={updateSelectedWithState}
+    ></TopicChoice>
+  );
+};
