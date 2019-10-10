@@ -22,3 +22,5 @@ The app is broken up into the following steps:
 | step-7 | Adding Docs to Storybook         |
 
 To start Storybook, run the command `npm run storybook`
+
+The slides for this presentation can be found [here](https://slid.es/huffn/sdd)
